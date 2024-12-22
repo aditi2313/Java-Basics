@@ -1,18 +1,30 @@
-## Getting Started
+## Java Basics
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### CONCEPTS TO PRACTICE
 
-## Folder Structure
+1. Class
+2. Attributes
+3. Methods
+4. Class Level Attributes
+5. Class Level Methods
+6. Enums
+7. Associations
+8. Dependancies
+9. 1 Multiplicity
+10. 0 or 1 Multiplicity
+11. 1+ Multiplicity
+12. Inheritance
+13. Overriding
+14. Overloading
+15. Interface
+16. Abstact Class
 
-The workspace contains two folders by default, where:
+### NOTES
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Overriding the equals method requires the method signature to be equals(Object).
+2. An abstract class can implement an interface and choose to define some/all or none of the interface's methods.
+3. Abstract classes cannot be instantiated but normal class can.
+4. You can define relationships between two objects using a class.
+5. Relationships can be uni or bi directional. E.g. Person can have a pet dog but the dog can have a different person as its owner.
+6. Abstract classes to be used over interfaces when you want attributes to be shared too instead of just methods to be shared.
+7. Interfaces can be used when you want a class to implement multiple interfaces because you cannot extend more than one class in Java to avoid the diamond problem.
