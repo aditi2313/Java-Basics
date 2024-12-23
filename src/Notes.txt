@@ -26,3 +26,38 @@ NOTES
 5. Relationships can be uni or bi directional. E.g. Person can have a pet dog but the dog can have a different person as its owner.
 6. Abstract classes to be used over interfaces when you want attributes to be shared too instead of just methods to be shared.
 7. Interfaces can be used when you want a class to implement multiple interfaces because you cannot extend more than one class in Java to avoid the diamond problem.
+
+
+ARRAYS
+
+import java.util.Arrays;
+int[] numbers = new int[5];
+numbers[0] = 1
+numbers[1] = 2
+
+int[] numbers = {1, 2, 3, 4, 5}
+
+number.length
+Arrays.toString(numbers);
+For multidimensional arrays use Arrays.deepToString(numbers);
+
+CONSTANTS
+
+Defined with final keyword. Cannot be changed later.
+
+LOOPS 
+
+for (int i = 0; i < 5; i++) {
+    return true;
+}
+
+CONDITIONALS
+
+n = 0
+if (n > 0) {
+    return "Positive";
+} else if (n < 0) {
+    return "Negative";
+} else {
+    return "Is 0";
+}
