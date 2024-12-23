@@ -10,5 +10,7 @@ public class App {
         Person q = new Person("Bob", 20, Demographic.YOUNG);
         System.out.println(q);
         System.out.println(q.getPet());
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        System.out.println(numbers.length);
     }
 }
