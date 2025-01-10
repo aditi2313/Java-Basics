@@ -6,8 +6,8 @@ CONCEPTS TO PRACTICE
 4. Class Level Attributes
 5. Class Level Methods
 6. Enums
-7. Associations
-8. Dependancies
+7. Associations: Has-a (another class object as an attribute)
+8. Dependancies: Uses-a (another class object for a method but does not have it as an attribute)
 9. 1 Multiplicity
 10. 0 or 1 Multiplicity
 11. 1+ Multiplicity
@@ -61,3 +61,23 @@ if (n > 0) {
 } else {
     return "Is 0";
 }
+
+Advantages of a Wrapper Class
+1. Additional Methods
+2. Enabling Generics
+3. Immutable
+4. Can be null
+5. Java Collections only work on Wrapper Classes. Cannot do ArrayList<int>, it should be ArrayList<Integer>
+
+Comparable<T> Interface:
+
+This is a standard Java interface in the java.lang package.
+It is used to define a natural ordering for objects of a class.
+Classes implementing Comparable<T> must define the compareTo(T o) method, which is used for comparison.
+
+Generic Bounds:
+
+In a generic class or method, you can restrict the type parameter to specific types using the extends keyword.
+T extends Comparable<T> means:
+1. T must implement the Comparable<T> interface.
+2. Therefore, objects of type T can be compared using the compareTo() method.
