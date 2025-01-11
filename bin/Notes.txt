@@ -16,6 +16,11 @@ CONCEPTS TO PRACTICE
 14. Overloading
 15. Interface
 16. Abstact Class
+17. Lambda expressions
+18. Stream API
+19. Optional class for null handling
+20. Date and time API (java.time package)
+21. Default and static methods in interfaces
 
 NOTES
 
@@ -62,7 +67,8 @@ if (n > 0) {
     return "Is 0";
 }
 
-Advantages of a Wrapper Class
+Advantages of a Wrapper Class:
+
 1. Additional Methods
 2. Enabling Generics
 3. Immutable
@@ -81,3 +87,22 @@ In a generic class or method, you can restrict the type parameter to specific ty
 T extends Comparable<T> means:
 1. T must implement the Comparable<T> interface.
 2. Therefore, objects of type T can be compared using the compareTo() method.
+
+Stack:
+
+Examples: 
+1. Local variables (int num = 10;)
+2. Method calls
+3. References to an object (Person p1 = new Person("Rik");)
+
+Heap:
+
+1. Stores objects (new Person("Rik");)
+2. lass-level variables (String name;)
+
+Garbage Collection:
+
+Person p1 = new Person("Rik");
+p1 = null;
+
+Here, new Person("Rik") is cleaned up from the Heap through Garbage Collection.
