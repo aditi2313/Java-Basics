@@ -17,10 +17,14 @@ CONCEPTS TO PRACTICE
 15. Interface
 16. Abstact Class
 17. Lambda expressions
-18. Stream API
+18. Stream API (filter, forEach, map)
 19. Optional class for null handling
 20. Date and time API (java.time package)
 21. Default and static methods in interfaces
+22. Consumer<T>: Accepts a value but does not return anything.
+23. Function<T, R>: Accepts a value and returns another value.
+24. Predicate<T>: Accepts a value and returns a boolean.
+25. Supplier<T>: Provides a value (no input).
 
 NOTES
 
@@ -186,3 +190,20 @@ Example:
 public void readFile() throws IOException {
     FileReader reader = new FileReader("file.txt");
 }
+
+Components of a Lambda Expressions:
+
+Parameter List:
+
+Specifies the input parameters (if any).
+Parentheses are optional for a single parameter.
+
+Arrow Token (->):
+
+Separates the parameter list and the body of the lambda.
+
+Body:
+
+Contains the code to be executed.
+Can be a single statement or a block of code.
+
