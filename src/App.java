@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -32,6 +34,10 @@ public class App {
         IntStream stream = Arrays.stream(numbers).limit(5);
         // New variable so the same stream does not get operated upon twice.
         IntStream newStream = stream.map(x -> x * 2).filter(x -> x != 2);
-        newStream.forEach(x -> System.out.println(x));
+        System.out.println(newStream.sum());
+
+        List<Integer> summoreNumbers = Arrays.asList(1, 2, 3, 4, 5);
+        Stream<Integer> streamm = summoreNumbers.stream();
+        streamm.forEach(x -> System.out.println(x));
     }
 }
