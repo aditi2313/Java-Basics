@@ -1,4 +1,8 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -23,5 +27,17 @@ public class App {
         moreNumbers.remove(1); // Removes the element at index 1 (20)
         System.out.println(moreNumbers);
         System.out.println(moreNumbers.size());
+
+        // Streams
+        // Arrays.stream() method returns IntStream when the array has primitives and
+        // Stream<String> when it doesnt.
+        IntStream stream = Arrays.stream(numbers).limit(5);
+        // New variable so the same stream does not get operated upon twice.
+        IntStream newStream = stream.map(x -> x * 2).filter(x -> x != 2);
+        System.out.println(newStream.sum());
+
+        List<Integer> summoreNumbers = Arrays.asList(1, 2, 3, 4, 5);
+        Stream<Integer> streamm = summoreNumbers.stream();
+        streamm.forEach(x -> System.out.println(x));
     }
 }
