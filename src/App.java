@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import java.util.Iterator;
+
 import java.util.List;
 
 public class App {
@@ -39,5 +42,16 @@ public class App {
         List<Integer> summoreNumbers = Arrays.asList(1, 2, 3, 4, 5);
         Stream<Integer> streamm = summoreNumbers.stream();
         streamm.forEach(x -> System.out.println(x));
+
+        // HashSet
+        HashSet<String> set = new HashSet<>();
+        set.add("A");
+        set.add("B");
+        set.add("C");
+        Iterator<String> interator = set.iterator();
+        while (interator.hasNext()) {
+            String elem = interator.next();
+            System.out.println(elem);
+        }
     }
 }
